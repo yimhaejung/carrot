@@ -1,0 +1,2 @@
+C:\Users\user\source\repos\HelloWorldUseGit\Debug\HelloWorldUseGit.exe
+C:\Users\user\source\repos\HelloWorldUseGit\Debug\HelloWorldUseGit.pdb
