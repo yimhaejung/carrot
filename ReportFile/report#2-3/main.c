@@ -12,7 +12,7 @@ int main(void)
   one = a + b;
   two = a - b;
   thr = a * b; 
-  fou = a / b;
+  fou = ((double)a) / ((double)b);
   fiv = a % b;
 
   printf("덧셈 : %d\n", one);
