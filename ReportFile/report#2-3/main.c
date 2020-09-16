@@ -6,8 +6,9 @@ int main(void)
   int one, two, thr, fiv;
   double fou; 
 
-  a = 12;
-  b = 7;
+  printf("please intput the integer variable number : ");
+  scanf("%d%d", &a, &b);
+
   one = a + b;
   two = a - b;
   thr = a * b; 
