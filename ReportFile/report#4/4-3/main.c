@@ -6,18 +6,20 @@ int main(void)
 
   printf("enter an integer, a number of row : ");
   scanf("%d%d", &a, &row);
-
-  for (i = 0; i < row; i++)
-  {
-    for (j = 0; j < a; j++)
-    {
-      printf("*");
-    }
-    printf("\n");
-  }
   if (a == 0 || row ==0)
+    {
+      printf("* Cannot be printed");
+    }
+  else
   {
-    printf("* Cannot be printed");
+    for (i = 0; i < row; i++)
+    {
+      for (j = 0; j < a; j++)
+      {
+        printf("*");
+      }
+      printf("\n");
+    }
   }
   return 0;
 }
