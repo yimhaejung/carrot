@@ -1,7 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <math.h>
+
 int main(void)
 {
-	printf("%d을 %d로 나누면 %lf 입니다.", 1, 2, 0.5);
+  double a = -10.0;
+  double b = 3.6;
+
+  printf("나머지 : %.5lf", fmod (a, b));
   return 0;
 }
