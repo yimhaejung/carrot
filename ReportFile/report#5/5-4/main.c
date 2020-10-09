@@ -1,6 +1,6 @@
 # include <stdio.h>
 # include <stdlib.h>
-# include <math.h>
+# include <math.h> //sqrt함수 사용하기 위해 추가
 
 double distance(double x, double y); //distance함수 선언(반환형, 매개변수 모두포함)
 
@@ -23,7 +23,7 @@ int main(void)
 
 double distance(double x, double y) //distance함수 정의 시작
 {
-  double dis = sqrt((x * x) + (y * y)); //sqrt는 ()안의 수의 제곱근을 구하는 함수다.
-
+  double dis = sqrt((x * x) + (y * y)); //sqrt는 ()안의 수의 제곱근을 구하는 함수
+  
   return dis; //dis값 반환
 }
