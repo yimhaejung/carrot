@@ -2,21 +2,21 @@
 #include <stdlib.h>
 #include <time.h>
 
-void swap(double *pa, double *pb); // 두 실수 바꾸는 함수
-void line_up(double *maxp, double *minp); // 숫자 비교함수 선언
-double rand(double *rand_num); // 숫자 랜덤생성 함수 
+void swap(int *pa, int *pb); // 두 실수 바꾸는 함수
+void line_up(int *maxp, int *minp); // 숫자 비교함수 선언
+int b_rand(int *rand_num); // 숫자 랜덤생성 함수 
 
 int main(void)
 {
-  double rand_num[10];
-  rand(rand_num);
+  int rand_num[10];
+  b_rand(rand_num); // rand함수 호출
 
   return 0;
 }
-double rand(double *rand_num)
+int b_rand(int *rand_num)
 {
   int i, j;
-  double rand_num[10];
+  int rand_num[10];
   srand(time(NULL));
 
   printf("랜덤번호 : ");
@@ -31,9 +31,8 @@ double rand(double *rand_num)
         break; // 안쪽 for문 탈출
       }
     }
-    printf("%f", rand_num[i]);
+    printf("%d", rand_num[i]);
   }
-}
   for(i = 0; i < 10; i++)
   {
     for(j = 0; j < 10; j++)
@@ -41,15 +40,21 @@ double rand(double *rand_num)
       line_up(&rand_num[j], &rand_num[j + 1]);
     }
   }
+  printf("rand_num : ");
+  for(i = 0; i < 10; i++) 
+  {
+    printf("%d", rand_num[i]);
+  }
+  return rand_num[10];
 }
-void swap(double *pa, double *pb)
+void swap(int *pa, int *pb)
 {
-  double temp;
+  int temp;
   temp = *pa;
   *pa = *pb;
   *pb = temp;
 }
-void line_up(double *maxp, double *minp)
+void line_up(int *maxp, int *minp)
 {
   if(*maxp < *minp)
   {
