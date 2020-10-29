@@ -3,17 +3,10 @@
 #include <time.h>
 #include <string.h>
 
-int *sum(int a, int b)
-{
-  static int res;
-  res = a + b;
-  return res;
-}
 int main(void)
 {
-  int *resp;
-  resp = sum(10, 20);
-  printf("gkq : %d\n", *resp);
+  unsigned int a;
 
-  return 0;
+  a = -1;
+  printf("%u", a);
 }
