@@ -12,7 +12,6 @@ int main(void)
   int ball1, ball2, out2;
   int i, j;
   int game;
-  int count = 1;
   
   srand(time(NULL));
   for(i = 0; i < 4; i++)
