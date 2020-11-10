@@ -84,7 +84,6 @@ void sub(int a[][3], int b[][3])
 void mul(int a[][3], int b[][3])
 {
   int result[3][3];
-  int temp = 0;
   int i, j, k;
 
   for(i = 0; i < 3; i++)
@@ -93,8 +92,7 @@ void mul(int a[][3], int b[][3])
     {
       for(k = 0; k < 3; k++)
       {
-        temp += a[i][k] * b[k][j]; 
-        result[i][j] = temp; // 각 행렬의 행과 열을 순서대로 곱한값을 더해서 결과에 저장
+        result[i][j] += a[i][k] * b[k][j]; // 각 행렬의 행과 열을 순서대로 곱한값을 더해서 결과에 저장
       }
     }
   }

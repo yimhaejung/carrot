@@ -27,5 +27,5 @@ int main(void)
   d = fabs(D) / sqrt(C);
   printf("Shortest distance between straight line and point : %.1lf", d);
 
- return 0;
+  return 0;
 }
