@@ -1,0 +1,8 @@
+Dog
+Tiger
+Horse
+Monkey
+Lion
+Koala
+Giraffe
+Owl
